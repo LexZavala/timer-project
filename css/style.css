@@ -1,0 +1,28 @@
+
+
+#timer-container {
+    height: 20em;
+    width: 20em;
+    border: lightslategray 2px solid;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#timer-input {
+
+}
+
+input {
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid lightslategray;
+}
+
+.inputField{
+    width: 310px;
+}
+
+.timeContent {
+
+}
+
