@@ -18,7 +18,7 @@ input {
     border: 1px solid lightslategray;
 }
 
-.inputField{
+#inputField{
     width: 310px;
 }
 

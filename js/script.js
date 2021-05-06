@@ -26,12 +26,13 @@ function tick(){
 }
 
 function startCounter(){
-    var myInput = document.getElementsByClassName('inputField').value;
-    if (isNaN(parseFloat(myInput.toString()))){
+    var myInput = document.getElementById('inputField').value;
+    alert(myInput);
+    if (isNaN(myInput)){
         alert("Type a valid number please");
         return;
     }
-    mySeconds=myInput*60;
+    mySeconds = myInput*60;
 
     intervalHandle=setInterval(tick, 1000);
 
