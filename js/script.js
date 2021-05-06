@@ -36,7 +36,7 @@ function startCounter(){
 
     intervalHandle=setInterval(tick, 1000);
 
-    document.getElementsByClassName('inputField').style.display="none";
+    document.getElementById('inputField').style.display="none";
 }
 
 $('#myButton').click(function (){
