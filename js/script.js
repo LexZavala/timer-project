@@ -3,7 +3,9 @@ var mySeconds;
 var intervalHandle;
 
 function resetPage(){
-    // document.getElementsByClassName('inputField');
+    // document.getElementsByClassName('inputField').style.display="none";
+    var origin = document.getElementsByTagName("body").html;
+    console.log(origin)
 }
 function tick(){
     var timeDisplay = document.getElementById('time');
@@ -17,8 +19,8 @@ function tick(){
     timeDisplay.innerHTML = message;
 
     if (mySeconds === 0){
-        // timeDisplay.innerHTML = "DONE";
-        alert("Time is up");
+        timeDisplay.innerHTML = "TIME IS UP!";
+        // alert("Time is up");
         clearInterval(intervalHandle);
         resetPage();
     }
@@ -26,22 +28,26 @@ function tick(){
 }
 
 function startCounter(){
-    var myInput = document.getElementById('inputField').value;
-    alert(myInput);
-    if (isNaN(myInput)){
+    var myInput = document.getElementById('inputField');
+    var userTime = Number(myInput.value)
+    if (isNaN(userTime)){
         alert("Type a valid number please");
         return;
     }
-    mySeconds = myInput*60;
+    mySeconds = userTime*60;
 
     intervalHandle=setInterval(tick, 1000);
 
     document.getElementById('inputField').style.display="none";
+    $('#myButton').css('display', 'none');
 }
 
-$('#myButton').click(function (){
+$('#myButton').click(function (e){
+    e.preventDefault();
     startCounter();
 });
+
+
 
 // var input = document.getElementsByClassName('inputField');
 // var checkEnter = input.addEventListener('keydown', function (e){
