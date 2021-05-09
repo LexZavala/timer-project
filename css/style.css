@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
 body {
     box-sizing: border-box;
     background-color: #100c08;
 }
 
 .header {
-    font-size: 10em;
+    font-size: 8em;
     color: dimgrey;
     opacity: 40%;
     width: 98%;
+
 }
 
 #timer-container {
@@ -36,7 +39,7 @@ input {
 
 ::placeholder {
     color: whitesmoke;
-    font-size: medium;
+    font-size: 14px;
     width: 100%;
 }
 
