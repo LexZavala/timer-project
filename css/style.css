@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 
 body {
     box-sizing: border-box;
@@ -17,26 +18,27 @@ body {
 #timer-container {
     height: 20em;
     width: 20em;
-    border: lightslategray 2px solid;
+    border: none;
     margin: 0 auto;
-    border-radius: 20px;
-    background-color: whitesmoke;
+    border-radius: 25px;
+    /*background-color: whitesmoke;*/
+    background: linear-gradient( 46deg, #2AF598, #22E4AC, #14C9CB, #08B3E5);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out alternate infinite;
 }
 
 #time {
     /*margin:122px 110px ;*/
-    font-family: 'Emblema One', cursive;
+    font-family: 'Prosto One', serif;
     font-size: 4em;
-}
-
-#timer-input {
-
+    color: ghostwhite;
 }
 
 input {
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid lightslategray;
+    color: whitesmoke;
 }
 
 #inputField{
@@ -53,10 +55,25 @@ input {
 button {
     color: ghostwhite;
     background-color: #95d5b2;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin: 0px 8.984px;
 }
 
 .timeContent {
 
+}
+
+@keyframes change{
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 

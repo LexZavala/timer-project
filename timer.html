@@ -10,18 +10,24 @@
     <div class="row pb-5">
         <h1 class="col header" style="text-align: center">TIMER WEBSITE</h1>
     </div>
-    <div class="pb-3 row" id="timer-input">
-        <input  class="col-lg-2 col-md-2 col-sm-3" type="text" placeholder=" How many minutes?" id="inputField">
-    </div>
-    <div class="row d-flex justify-content-center mb-3" >
-        <button class="col-lg-1 col-md-1 col-sm-2" id="myButton">start</button>
-    </div>
+
 <!--Possible Row In Here-->
     <div class="row d-flex">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-5 flex-start mb-4">
+            <div class="pb-3 mt-5 row" id="timer-input">
+                <input  class="col-lg-11 col-md-11 col-sm-11 col-11" type="text" placeholder=" How many minutes?" id="inputField">
+            </div>
+            <div class="row d-flex justify-content-start" >
+                <button class="col-lg-5 col-md-5 col-sm-4 col-5" id="myButton">start</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="row" id="timer-container">
             <h1 class="col-12 d-flex justify-content-center align-self-center" id="time"> 0:00</h1>
         </div>
     </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
