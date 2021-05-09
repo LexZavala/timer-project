@@ -1,4 +1,14 @@
+body {
+    box-sizing: border-box;
+    background-color: #100c08;
+}
 
+.header {
+    font-size: 10em;
+    color: dimgrey;
+    opacity: 40%;
+    width: 98%;
+}
 
 #timer-container {
     height: 20em;
@@ -6,6 +16,7 @@
     border: lightslategray 2px solid;
     margin: 0 auto;
     border-radius: 20px;
+    background-color: whitesmoke;
 }
 
 #timer-input {
@@ -19,7 +30,20 @@ input {
 }
 
 #inputField{
-    width: 310px;
+    background-color: dimgrey;
+    border: none;
+}
+
+::placeholder {
+    color: whitesmoke;
+    font-size: medium;
+    width: 100%;
+}
+
+button {
+    color: ghostwhite;
+    background-color: #95d5b2;
+    border-radius: 15px;
 }
 
 .timeContent {
