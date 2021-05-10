@@ -24,7 +24,7 @@ body {
     /*background-color: whitesmoke;*/
     background: linear-gradient( 46deg, #2AF598, #22E4AC, #14C9CB, #08B3E5);
     background-size: 400% 400%;
-    animation: change 10s ease-in-out alternate infinite;
+    animation: change 5s ease-in-out alternate infinite;
 }
 
 #time {
